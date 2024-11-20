@@ -17,7 +17,7 @@ const geometry = new THREE.BoxGeometry(2, 2, 2);
 const textureLoader = new THREE.TextureLoader();
 const faceTextures = [];
 for (let i = 1; i <= 6; i++) {
-    const texture = textureLoader.load(`${i}.png`);
+    const texture = textureLoader.load(`text${i}.png`);
     faceTextures.push(new THREE.MeshStandardMaterial({ map: texture }));
 }
 
