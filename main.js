@@ -33,19 +33,11 @@ const directional2Light = new THREE.DirectionalLight(0xffffff, 0.1);
 directional2Light.position.set(-5, -5, -5);
 scene.add(directional2Light);
 
-const lightHelper = new THREE.DirectionalLightHelper(directionalLight, 1);
-scene.add(lightHelper);
-
-const lightHelper2 = new THREE.DirectionalLightHelper(directional2Light, 1);
-scene.add(lightHelper2);
-
 
 const pointLight = new THREE.PointLight(0xffffff, 10);
 pointLight.position.set(-5, 5, 5);
 scene.add(pointLight);
 
-const pointLightHelper = new THREE.PointLightHelper(pointLight, 0.5);
-scene.add(pointLightHelper);
 
 
 const camera = new THREE.PerspectiveCamera(10, window.innerWidth / window.innerHeight, 1, 1000);
